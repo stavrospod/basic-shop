@@ -8,16 +8,33 @@ body {
   background: #f0efeb;
 }
 
-.nav-icons {
-  display: inline-block;
-}
-
-.navbar-brand {
+header .navbar-brand {
   text-align: center;
 }
 
-.main-brand {
+header .main-brand {
   font-weight: bold;
+}
+
+header .hero-image {
+  background: url("/Web_Dev/basic-shop/images/hero-image.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 300px;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .book-now {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  margin-right: -50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #489AF6;
 }
 
 .main-content h1 {
@@ -45,7 +62,7 @@ body {
   margin-bottom: 2em;
 }
 
-.card-wrapper {
+.main-content .card-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -56,7 +73,7 @@ body {
           justify-content: center;
 }
 
-.card-wrapper .card {
+.main-content .card-wrapper .card {
   margin-bottom: 1em;
 }
 
@@ -70,32 +87,11 @@ footer address {
   padding-top: 1em;
 }
 
-.hero-image {
-  background: url("/Web_Dev/basic-shop/images/hero-image.jpg");
-  background-size: cover;
-  background-position: center;
-  min-height: 300px;
-  position: relative;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.book-now {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  margin-right: -50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  background-color: #489AF6;
-}
-
-.map-responsive {
+footer .map-responsive {
   margin-bottom: 1em;
 }
 
-.reviews ul {
+footer .reviews ul {
   padding: 0;
   color: #ffffff;
   list-style: none;
@@ -108,7 +104,7 @@ footer address {
   margin-top: 1em;
 }
 
-.copyright {
+footer .copyright {
   background-color: lightgrey;
 }
 /*# sourceMappingURL=main.css.map */
