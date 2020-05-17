@@ -1,0 +1,103 @@
+$footer: #1D3557;
+$body-background: #f0efeb;
+$cta-color: #489AF6;
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background: $body-background
+}
+
+.navbar-brand{
+    text-align: center;
+}
+.main-brand{
+    font-weight: bold;
+}
+
+.main-content{
+    h1{
+        text-align: center;
+        font-size: 1.4em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        font-weight: bold;
+    }
+    
+    h3{
+        text-align: center;
+        font-size: 1.3em;
+    }
+    p{
+        font-size: 16px;
+        text-align: center;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    .btn-more{
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+}
+
+.card-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .card{
+        margin-bottom: 1em;
+    }
+}
+
+
+footer{
+    background-color: $footer;
+
+    address{
+        color: #ffffff;
+        font-weight: bold;
+        padding-top: 1em;
+    }
+}
+
+.hero-image{
+    background: url("/Web_Dev/basic-shop/images/hero-image.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+    position: relative;
+    align-items: center;
+}
+
+.book-now{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background-color: $cta-color;
+}
+
+.map-responsive{
+    margin-bottom: 1em;
+}
+
+.reviews{
+    ul{
+        padding: 0;
+        color: #ffffff;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1em;
+    }
+}
+
+.copyright{
+    background-color: lightgrey;
+}
+
