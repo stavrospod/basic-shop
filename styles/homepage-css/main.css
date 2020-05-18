@@ -8,6 +8,11 @@ body {
   background: #f0efeb;
 }
 
+header .not-mobile {
+  display: none;
+  color: black;
+}
+
 header .navbar-brand {
   text-align: center;
 }
@@ -71,10 +76,12 @@ header .book-now {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 2em;
 }
 
 .main-content .card-wrapper .card {
   margin-bottom: 1em;
+  margin-right: 2em;
 }
 
 footer {
@@ -106,5 +113,22 @@ footer .reviews ul {
 
 footer .copyright {
   background-color: lightgrey;
+}
+
+@media only screen and (min-width: 767px) {
+  .not-mobile {
+    color: black;
+  }
+  .grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -webkit-column-gap: 2em;
+            column-gap: 2em;
+  }
+  iframe {
+    height: 300px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

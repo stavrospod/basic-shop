@@ -12,6 +12,11 @@ body{
 }
 
 header{
+
+    .not-mobile{
+        display: none;
+        color: black;
+    }
     .navbar-brand{
         text-align: center;
     }
@@ -63,9 +68,11 @@ header{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        margin-top: 2em;
     
         .card{
             margin-bottom: 1em;
+            margin-right: 2em;
         }
     }
 }
@@ -101,5 +108,15 @@ footer{
 
 
 @media only screen and (min-width: 767px) {
-
+    .not-mobile{
+        color: black;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2em;
+    }
+    iframe{
+        height: 300px;
+    }
 }
